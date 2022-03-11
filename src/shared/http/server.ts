@@ -24,6 +24,7 @@ app.use((error: Error, request: Request, response: Response, next: NextFunction)
     })
 });
 
-app.listen(9000, () => {
-    console.log("🚀 SERVER START ON PORT 9000 🚀");
+const port = process.env.PORT || 9000;
+app.listen(port, () => {
+    console.log(`🚀 SERVER START ON PORT ${port} 🚀`);
 })

@@ -25,6 +25,7 @@ app.use(function (error, request, response, next) {
         message: "Internal Server Error"
     });
 });
-app.listen(9000, function () {
-    console.log("🚀 SERVER START ON PORT 9000 🚀");
+var port = process.env.PORT || 9000;
+app.listen(port, function () {
+    console.log("\uD83D\uDE80 SERVER START ON PORT ".concat(port, " \uD83D\uDE80"));
 });
