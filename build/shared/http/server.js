@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var CustomException_1 = __importDefault(require("../exceptions/CustomException"));
+var CustomException_1 = __importDefault(require("@shared/exceptions/CustomException"));
 var cors_1 = __importDefault(require("cors"));
 var express_1 = __importDefault(require("express"));
 require("express-async-errors");

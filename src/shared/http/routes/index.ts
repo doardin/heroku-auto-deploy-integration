@@ -3,7 +3,7 @@ import { Router } from "express";
 const routes = Router();
 
 routes.get("/", (request, response) => {
-    return response.json({ message: "Hello world" });
+    return response.send(request.query['hub.challenge']);
 });
 
 export default routes;
