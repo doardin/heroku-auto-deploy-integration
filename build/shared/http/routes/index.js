@@ -6,4 +6,8 @@ routes.get("/", function (request, response) {
     console.log(request.query);
     return response.send(request.query['hub.challenge']);
 });
+routes.post("/", function (request, response) {
+    console.log(request.body);
+    return response.json({});
+});
 exports.default = routes;
