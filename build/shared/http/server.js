@@ -13,6 +13,8 @@ app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use(routes_1.default);
 app.use(function (error, request, response, next) {
+    console.log(error.message);
+    console.log(error.stack);
     return response.status(500).json({
         status: 500,
         message: "Internal Server Error"
