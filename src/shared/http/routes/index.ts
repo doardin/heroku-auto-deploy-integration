@@ -11,6 +11,7 @@ routes.post("/set-callback-url", (request, response) => {
 });
 
 routes.post("/", async (request, response) => {
+    console.log(request.params);
     const res = await axios
         .create()
         .post(callbackUrl, request.body);

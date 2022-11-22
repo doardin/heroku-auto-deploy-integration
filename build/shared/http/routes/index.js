@@ -53,9 +53,11 @@ routes.post("/", function (request, response) { return __awaiter(void 0, void 0,
     var res;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, axios_1.default
-                    .create()
-                    .post(callbackUrl, request.body)];
+            case 0:
+                console.log(request.params);
+                return [4 /*yield*/, axios_1.default
+                        .create()
+                        .post(callbackUrl, request.body)];
             case 1:
                 res = _a.sent();
                 console.log("Request response: " + res);
